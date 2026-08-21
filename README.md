@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.png" alt="Joel T Harter" width="100%">
+</p>
+
 # Joel T Harter
 
 I build flight software architectures, physics simulations, mathematical tools, and other silly things along those lines.
