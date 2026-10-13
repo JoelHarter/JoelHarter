@@ -10,14 +10,32 @@ I build flight software architectures, physics simulations, mathematical tools, 
 
 ### Open Source Software
 
-#### [RocketToolbox](https://github.com/JoelHarter/RocketToolbox)
-A pure-Julia utility library for aerospace general use. This has stuff like universal and astronomical constants, math utilities, gravity-related calculations, coordinate conversions, etc. I originally wrote this because I needed it for my job making guidance algorithms for rockets, and my company was kind enough to release it publicly. This toolbox is compatible with JuliaXC, so it can be converted to human readable C code.
+#### [LegibleC](https://github.com/JoelHarter/LegibleC.jl)
+Write numerical code in Julia; get the C you would have written by hand. A transpiler for the
+kind of code that has to leave Julia — for a flight computer, a microcontroller, a library someone
+else links, or a reviewer who must read what ships — that produces fixed-size, allocation-free C
+with your names, your comments and your docstrings carried across, and nothing to link but the C
+standard library. Every function in its test suite is transpiled, compiled and run against Julia
+under GCC and Clang on every push. Registered in Julia's General registry as `LegibleC`.
 
-#### [JuliaXC](https://github.com/JoelHarter/JuliaXC)
-An ahead-of-time transpiler from Julia to standalone C99. Translates high-level numerical algorithms directly into bit-identical, zero-allocation C code with provenance tracking and lazy call-graph expansion, allowing algorithms prototyped in Julia to run on embedded flight microcontrollers without a Julia runtime. The goal is to spit out C that not only runs, but can actually be read by human people.
+#### [RocketToolbox](https://github.com/JoelHarter/RocketToolbox)
+A pure-Julia utility library for aerospace work: universal and astronomical constants, math
+utilities, gravity calculations, coordinate conversions, and the like. I wrote it because I
+needed it for guidance algorithms at work, and my company was kind enough to release it.
 
 #### [Unihedron](https://github.com/JoelHarter/Unihedron)
-A polyhedral geometry engine for Julia. Generates and visualizes 130+ polyhedra, including Platonic, Archimedean, Catalan, the full set of 92 Johnson solids, Kepler-Poinsot star polyhedra, prisms, antiprisms, pyramids, bipyramids, and a few extra ones my friends and I discovered and thought looked cool.
+A polyhedral geometry engine for Julia. Generates and visualizes 130+ polyhedra: the Platonic,
+Archimedean and Catalan solids, all 92 Johnson solids, the Kepler-Poinsot star polyhedra, prisms,
+antiprisms, pyramids, bipyramids, and a few extra ones my friends and I discovered and thought
+looked cool.
+
+#### [Trailhead](https://github.com/JoelHarter/Trailhead)
+A Minecraft Bedrock add-on inspired by the wild places of North America, starting with giant
+sequoia groves.
+
+#### [tool/](https://github.com/JoelHarter/JoelHarter/tree/main/tool)
+This repo doubles as my mixed bag of everyday tools, the ones I reach for in my own work, kept
+here so I have them wherever I am.
 
 ---
 
